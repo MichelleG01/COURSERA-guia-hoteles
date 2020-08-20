@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto de Nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://michelleg21@bitbucket.org/michelleg21/guia-hoteles.git"
+  },
+  "author": "Michelle",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/michelleg21/guia-hoteles#readme"
+}

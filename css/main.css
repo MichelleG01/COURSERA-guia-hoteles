@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+body {
+	font-family: 'Gloria Hallelujah';
+}
+
+.jumbotron{
+	background-color: rgba(95,45,85,0.8);
+	color: black;
+}
+
+.card-hotel{
+	flex: 1 150px; 
+	padding: 2px 5px 2px 5px
+}
+
+.btn{
+	background-color: rgba(95,45,85,0.8);
+}
+
+footer {
+	background-color: rgba(95,45,85,0.8);
+}

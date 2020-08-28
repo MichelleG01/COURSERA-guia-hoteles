@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-
-body {
-	font-family: 'Gloria Hallelujah';
-}
-
 .jumbotron{
 	background-color: rgba(95,45,85,0.8);
 	color: black;
+	margin-top: 50px; /*Se pone este margen ya que el fixed-top del navbar nos quita espacio en este*/
 }
 
 .card-hotel{

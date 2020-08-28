@@ -7,55 +7,45 @@
 
     <!-- Bootstrap CSS -->
     <!-- Forma referencia desde un lugar publico -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  -->
+     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  -->
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <!-- Forma referenciada desde la CDN -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <!-- Para que haga uso de los estilos propios se agrega como cualquier hoja de estilo-->
-    <link rel="stylesheet" href="/css/main.css">
-    <!-- Forma referenciada desde la CDN, las referencias alojadas en sitios publicos -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+     <!-- Para que haga uso de los estilos propios se agrega como cualquier hoja de estilo-->
+     <link rel="stylesheet" href="/css/main.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" >
     <title>Guia Hoteles</title>
   </head>
   <body>
 
-  	<!--fixed-top le indica a la barra que se quede fija por mas que nos desplacemos -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		<a class="navbar-brand" href="#">Hoteles</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<!--El "target", especifica quién es el que va a activar esta acción, acá le ponemos el mismo "id" del contenido que va a tener nuestra barra de navegación -->
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  		<!--El id puede ser cualquier cosa-->
-  			<!--"collapse" y "navbar-collapse", nos va a indicar que es contenido colapsable, es decir, se va a ocultar para lo que es ya la forma responsive -->
-		    <ul class="navbar-nav mr-auto">
-		    	<!--Creamos una lista. mr-auto maneja los margenes -->
-				<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Oficina central</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">Calificanos</a> </li>
-		    </ul>
+  	
+  	<!--
+    <div class="jumbotron">
+		<div class="container">
+			<div class="row">
+			    <div class="col-sm">
+			    	<h1>Bienvenidos</h1>
+					<p>Esperemos que encuentres el hotel adecuado para ti.</p>
+			    </div>
+			    <div class="col-sm">
+			      	<h2>Acerca</h2>
+					<p>Esta es una pequeña empresa que recopila información de los mejores hoteles en diferentes lugares.</p>
+			    </div>
+			    <div class="col-sm">
+			      	<h2>Terminos y condiciones</h2>
+				<div>	<p>La empresa no se hace responsable sobre las reservas de los hoteles recomendados.</p>
+			    </div>
+		  		<p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p></div>
 		</div>
-	</nav>
+	</div>
+	-->
 
 	<!--Utilizando Flex -->
     <div class="jumbotron">
 		<h1>Hoteles</h1>
 	</div>
 	<div class="container">
-		<nav aria-label="breadcrumb">
-  			<ol class="breadcrumb">
-    			<li class="breadcrumb-item active" aria-current="page">Home</li>
-  			</ol>
-		</nav>
-
 		<div class="row">
 		    <div class="col-sm">
 		    	<h2>Bienvenidos</h2>
@@ -73,8 +63,8 @@
 		
 		<div class="d-flex flex-wrap">
 			<!-- flex-wrap lo que hace es ajustar los elementos que vamos teniendo dentro del ancho del contenedor.-->
-		    <div class="card-hotel d-flex flex-column justify-content-between">
-		    	<div><h3>Hotel Santa Barbara</h3>
+		    <div class="card-hotel">
+		    	<div><h3>Hotel Sanata Barbara</h3>
 				<p>Ubicado cerca de la ciudad de Medellín</p></div>
 		    	<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p></div>
 		    </div>
@@ -111,6 +101,7 @@
 	  	</div>
 
 	</div>
+
 
 	<footer class="page-footer font-small pt-4">
 

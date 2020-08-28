@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- Forma referencia desde un lugar publico -->
+    <!-- Forma referencia desde un lugar publico, tipo CDN -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  -->
 
+    <!--La segunda forma  para referenciar es haciendo uso de las librerias descargadas en nuestro pc -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <!-- Para que haga uso de los estilos propios se agrega como cualquier hoja de estilo-->
     <link rel="stylesheet" href="/css/main.css">
-    <!-- Forma referenciada desde la CDN, las referencias alojadas en sitios publicos -->
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
+    <!--Agrego estas librerias para solucionar error con la nvar -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/popper.js/dist/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -67,19 +69,18 @@
 		</samp>
 	</div>
 
-
 	<footer class="page-footer font-small pt-4">
 
 		<div class="container">
 			<ul class="list-unstyled list-inline text-center">
 			  <li class="list-inline-item">
 			    <a class="btn-floating btn-fb mx-1" href="https://facebook.com/">
-			      <i class="fab fa-facebook-f"> </i>
+			      <i class="fab fa-facebook-f icono"> </i>
 			    </a>
 			  </li>
 			  <li class="list-inline-item">
 			    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/">
-			      <i class="fab fa-twitter"> </i>
+			      <i class="fab fa-twitter icono"> </i>
 			    </a>
 			  </li>
 
@@ -87,14 +88,14 @@
 
 			<div class="row justify-content-between">
 					<div class="col-4">
-						<h3>Calificanos</h3>
+						<h3><span class="oi oi-thumb-up footer-address-icon"></span></span>Calificanos</h3>
 						<p>Recibimos sus sugerencias al correo soporte@todos.com.co</p>
 					</div>
 					<div class="col-4">
-						<h3>Oficina central</h3>
-						<p>Peru</p>
-						<p>0180003333333</p>
-						<p>hola@espero.esten.bien</p>
+						<h3><span class="oi oi-briefcase footer-address-icon"></span>Oficina central</h3>
+						<p><span class="oi oi-map-marker footer-address-icon"></span>Peru</p>
+						<p><span class="oi oi-phone footer-address-icon"></span>0180003333333</p>
+						<p><span class="oi oi-envelope-closed footer-address-icon"></span>hola@espero.esten.bien</p>
 					</div>
 				</div>
 

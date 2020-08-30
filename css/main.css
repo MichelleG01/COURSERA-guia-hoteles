@@ -5,13 +5,13 @@
 }
 
 .card-hotel{
-	flex: 1 150px; 
-	padding: 2px 5px 2px 5px;
+	flex: 1 200px; 
 	margin-top: 10px;
 }
 
 .btn{
 	background-color: rgba(95,45,85,0.8);
+	width: 100%;
 }
 
 footer {
@@ -24,4 +24,9 @@ footer {
 
 .icono{
 	color:black;
+}
+
+.im{
+display:block;
+margin:auto;
 }

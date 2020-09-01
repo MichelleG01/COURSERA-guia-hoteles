@@ -14,6 +14,10 @@
 	width: 100%;
 }
 
+.btnModal{
+	margin-bottom: 20px;
+}
+
 footer {
 	background-color: rgba(95,45,85,0.8);
 }

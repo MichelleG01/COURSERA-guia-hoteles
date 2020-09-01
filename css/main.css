@@ -30,3 +30,8 @@ footer {
 display:block;
 margin:auto;
 }
+
+.tab-content{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}

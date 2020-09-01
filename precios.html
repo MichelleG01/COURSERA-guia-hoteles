@@ -60,66 +60,99 @@
   			</ol>
 		</nav>
 
-		<!-- Creaciónde tabla -->
-		<div class="table-responsive">
-		<!-- Al poner el responsive la tabla se conserva en un cuadro -->
-			<table class="table table-striped">
-				<thead class="thead-dark">
-					<th>Calidad</th>
-					<th>Pinamar</th>
-					<th>Mar del plata</th>
-					<th>San Clemente</th>
-					<th>Santa Teresita</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td><span class="oi oi-star"></span></td>
-						<td>$100</td>
-						<td>$110</td>
-						<td>$120</td>
-						<td>$130</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"></span>
-							<span class="oi oi-star"></span></td>
-						<td>$200</td>
-						<td>$210</td>
-						<td>$220</td>
-						<td>$230</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"></span>
-							<span class="oi oi-star"></span>
-							<span class="oi oi-star"></span></td>
-						<td>3100</td>
-						<td>3110</td>
-						<td>3120</td>
-						<td>3130</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"></span>
-							<span class="oi oi-star"></span>
-							<span class="oi oi-star"></span>
-							<span class="oi oi-star"></span></td>
-						<td>4100</td>
-						<td>4110</td>
-						<td>4120</td>
-						<td>4130</td>
-					</tr>
-					<tr>
-						<td><span class="oi oi-star"></span>
-							<span class="oi oi-star"></span>
-							<span class="oi oi-star"></span>
-							<span class="oi oi-star"></span>
-							<span class="oi oi-star"></span></td>
-						<td>5100</td>
-						<td>5110</td>
-						<td>5120</td>
-						<td>5130</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		<!--Agregamos los navs-->
+		<!--Primero se definen lo que serían las solapas, las pestañas, los tabs -->
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+		    	<a class="nav-link active" id="precios-tab" data-toggle="tab" href="#precios" role="tab" aria-controls="precios" aria-selected="true">Active</a>
+		    	<!--El href se tiene que vincular con el id del panel que vamos a mostrar -->
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="nav-link" id="recomendacion-tab" data-toggle="tab" href="#recomendacion" role="tab" aria-controls="recomendacion" aria-selected="false">Recomendacion</a>
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+		  	</li>
+		</ul>
+
+		<!--Despues se definen los contenedores o los paneles que van a mostrar el contenido asociado a cada una de las pestañas. -->
+		<div class="tab-content" id="myTabContent">
+			<!--El sgt div se hace para cada contenedor -->
+			<div class="tab-pane fade show active" id="precios" role="tabpanel" aria-labelledby="precios-tab">
+				
+				<!-- Creaciónde tabla -->
+				<div class="table-responsive">
+				<!-- Al poner el responsive la tabla se conserva en un cuadro -->
+					<table class="table table-striped">
+						<thead class="thead-dark">
+							<th>Calidad</th>
+							<th>Pinamar</th>
+							<th>Mar del plata</th>
+							<th>San Clemente</th>
+							<th>Santa Teresita</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="oi oi-star"></span></td>
+								<td>$100</td>
+								<td>$110</td>
+								<td>$120</td>
+								<td>$130</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>$200</td>
+								<td>$210</td>
+								<td>$220</td>
+								<td>$230</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>3100</td>
+								<td>3110</td>
+								<td>3120</td>
+								<td>3130</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>4100</td>
+								<td>4110</td>
+								<td>4120</td>
+								<td>4130</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>5100</td>
+								<td>5110</td>
+								<td>5120</td>
+								<td>5130</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="tab-pane fade" id="recomendacion" role="tabpanel" aria-labelledby="recomendacion-tab">Recomendacion
+
+			</div>
+
+			<div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios
+
+			</div>
+
+		</div><!--Cierre del tab-content -->
+
+
 	</div>
 
 	<footer class="page-footer font-small pt-4">

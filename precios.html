@@ -62,6 +62,7 @@
 
 		<!--Agregamos los navs-->
 		<!--Primero se definen lo que serían las solapas, las pestañas, los tabs -->
+		<!--Se puede cambiar el diseño a botones utilizando pill. En la parte de  class="nav nav-tabs" se cambia por class="nav nav-pills y en data-toggle="tab" por data-toggle="pill""-->
 		<ul class="nav nav-tabs" id="myTab" role="tablist">
 			<li class="nav-item">
 		    	<a class="nav-link active" id="precios-tab" data-toggle="tab" href="#precios" role="tab" aria-controls="precios" aria-selected="true">Active</a>
@@ -71,7 +72,7 @@
 		    	<a class="nav-link" id="recomendacion-tab" data-toggle="tab" href="#recomendacion" role="tab" aria-controls="recomendacion" aria-selected="false">Recomendacion</a>
 		  	</li>
 		  	<li class="nav-item">
-		    	<a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+		    	<a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
 		  	</li>
 		</ul>
 
@@ -146,7 +147,53 @@
 
 			</div>
 
-			<div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios
+			<div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+				<div id="accordion">
+					<div class="card">
+					    <div class="card-header" id="headingOne">
+					      	<h5 class="mb-0">
+					        	<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					         	Tarjetas de crédito
+					        	</button>
+					      	</h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+					      	<div class="card-body">
+					        	Son tarjetas con un crédito asociado y las compras o retiradas de efectivo se hacen con cargo a ese crédito.
+					        	Puedes elegir diversas formas de devolver el importe dispuesto, como el pago semanal, a fin de mes, o un fraccionamiento del mismo (cuota fija mensual o porcentaje del total gastado) y en función de esa modalidad de pago se pueden o no pagar intereses.  Para cada tarjeta se establece un límite de crédito. Dicho crédito es permanente (mientras tengas operativa la tarjeta) y, conforme vayas pagando la deuda, puedes volver a disponer hasta el límite establecido.
+					      	</div>
+					    </div>
+					</div>
+					<div class="card">
+					    <div class="card-header" id="headingTwo">
+					      	<h5 class="mb-0">
+					        	<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          	Tarjetas de débito
+					        	</button>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					      	<div class="card-body">
+					        Con una tarjeta de débito podrás operar a través de cajeros automáticos (sacar dinero, pedir extractos y movimientos de la cuenta, etc.), y pagar en comercios. Con este tipo de tarjeta, todos los cargos de las operaciones que hagas se descuentan inmediatamente del saldo de tu cuenta; en caso de no existir saldo suficiente, la operación no se puede realizar.
+					      	</div>
+					    </div>
+					</div>
+					<div class="card">
+					    <div class="card-header" id="headingThree">
+					      	<h5 class="mb-0">
+					        	<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					         	Tarjetas prepago
+					        	</button>
+					      	</h5>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					      	<div class="card-body">
+					        La tarjeta prepago es la que tiene su uso limitado a un importe que previamente se ha cargado en la misma. Así, primero debes efectuar la carga de dinero y después podrás usarla para realizar las operaciones que se quiera como una tarjeta de débito: compras y retiradas de efectivo.
+					      	</div>
+					    </div>
+					  </div>					  
+				</div><!--Finaliza el acording -->
 
 			</div>
 

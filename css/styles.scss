@@ -1,14 +1,22 @@
+$color: rgba(95,45,85,0.8);
+
+@mixin margenes($top, $bottom){
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
 .jumbotron{
 	/*background-color: rgba(95,45,85,0.8); */
 	/*Hacemos uso de la variable creada en scass */
 	background-color: $color;
 	color: black;
-	margin-top: 50px; /*Se pone este margen ya que el fixed-top del navbar nos quita espacio en este*/
+	/*margin-top: 50px; */ /*Se pone este margen ya que el fixed-top del navbar nos quita espacio en este*/
+	@include margenes(50px, 0px); /*Se debe ingresar los parametros*/
 }
 
 .card-hotel{
-	flex: 1 200px; 
-	margin-top: 10px;
+	flex: 1 200px;
+	@include margenes(10px, 0px);
 }
 
 .btnInf{
@@ -16,8 +24,12 @@
 	width: 100%;
 }
 
+.breadcrumb{
+	@include margenes(10px, 0px);
+}
+
 .btnModal{
-	margin-bottom: 20px;
+	@include margenes(0px, 20px);
 }
 
 footer {

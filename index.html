@@ -9,17 +9,20 @@
     <!-- Forma referencia desde un lugar publico, tipo CDN -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  -->
 
+    <!-- build:css dist/index.css-->
+
     <!--La segunda forma  para referenciar es haciendo uso de las librerias descargadas en nuestro pc -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Para que haga uso de los estilos propios se agrega como cualquier hoja de estilo-->
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <!-- Se hace cambio en la direccion del archivo para generar el css con sass -->
-    <link rel="stylesheet" href="/css/styles2.css">
+    <link rel="stylesheet" href="/css/styles.css">
     
     <!-- Libreria para los iconos -->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
+    <!-- endbuild -->
 
     <title>Guia Hoteles</title>
   </head>
@@ -291,6 +294,8 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
+    <!-- build:js dist/index.js-->
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -330,5 +335,8 @@
 
     	});
     </script>
+    
+	<!-- endbuild -->
+
   </body>
 </html>

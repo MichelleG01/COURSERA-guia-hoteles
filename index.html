@@ -13,14 +13,11 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Para que haga uso de los estilos propios se agrega como cualquier hoja de estilo-->
     <link rel="stylesheet" href="/css/main.css">
+    
+    <!-- Libreria para los iconos -->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 
-    <!--Agrego estas librerias para solucionar error con la nvar -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <title>Guia Hoteles</title>
   </head>
@@ -111,14 +108,14 @@
 		</p>
 		<div class="row">
 		  	<div class="col">
-		    	<div class="collapse multi-collapse" id="multiCollapseExample1">
+		    	<div class="collapse" id="multiCollapseExample1">
 		      		<div class="card card-body">
 		        		El turismo como tal, nace en el siglo XIX, como una consecuencia de la Revolución industrial, con desplazamientos cuya intención principal es el ocio, descanso, cultura, salud, negocios o relaciones familiares. Estos movimientos se diferencian por su finalidad de otros tipos de viajes motivados por guerras, movimientos migratorios, conquista, comercio, entre otros. No obstante el turismo tiene antecedentes históricos claros.
 		     		</div>
 		    	</div>
 		 	</div>
 		  	<div class="col">
-		    	<div class="collapse multi-collapse" id="multiCollapseExample2">
+		    	<div class="collapse" id="multiCollapseExample2">
 		     		<div class="card card-body">
 		        	El turismo trae consigo tanto beneficios como costos económicos y no económicos para las comunidades receptoras. Además de los costos económicos, hay otras áreas que se impactan y que merece la pena analizar. Estas se relacionan con los beneficios que obtiene el viajero, como la aportación de los viajes de placer al descanso y la relajación, el beneficio educativo, la comprensión de otras y culturas, y el bienestar físico y mental para el viajero. btnInf
 		     		 </div>
@@ -218,9 +215,9 @@
 	  	</div>
 
 	  	<!--Utilizando Modal -->
-	  	<button type="button" class="btn btn-info btn-block btnModal" data-toggle="modal" data-target="#exampleModal" data-whatever="@">Quiero estar en la pagina</button>
+	  	<button type="button" class="btn btn-info btn-block btnModal" data-toggle="modal" data-target="#contactoBtn" data-whatever="@" id="contBtn">Quiero estar en la pagina</button>
 
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="contactoBtn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
@@ -292,18 +289,11 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <!-- Como ocurre con el CSS tambien se puede cambiar la referencia del jquery -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-
-    <!-- <script src="node_modules/popper.js/dist/umd/popper.min.js"></script> -->
-
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-    <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 
     <!--Scrip para que funcione el tooltip -->
     <script>
@@ -313,7 +303,29 @@
     		$("[data-toggle='popover']").popover();
     		$('.carousel').carousel({
     			interval: 6000
-    		})
+    		});
+    		//Si se utiliza " " doble por fuera por dentro hay que utilizar ' ' o viceversa
+    		//Creacion de modal para btn
+    		$('#contactoBtn').on('show.bs.modal', function(e){
+    			//cuando se dispara el evento, generalmente esa ejecución del evento viene con un objeto, que engloba los datos relacionados con el evento. El objeto seria e
+    			console.log('El modal se esta mostrando');
+    			$('#contBtn').prop('disabled', true);
+    			$('#contBtn').removeClass('btn-info');
+				$('#contBtn').addClass('btn-success');
+    		});
+    		$('#contactoBtn').on('shown.bs.modal', function(e){
+    			console.log('El modal se mostro');
+    		});
+    		$('#contactoBtn').on('hide.bs.modal', function(e){
+    			console.log('El modal se esta ocultando');
+    		});
+    		$('#contactoBtn').on('hidden.bs.modal', function(e){
+    			console.log('El modal se ocultó');
+    			$('#contBtn').prop('disabled', false);
+    			$('#contBtn').removeClass('btn-success');
+				$('#contBtn').addClass('btn-info');
+    		});
+
     	});
     </script>
   </body>

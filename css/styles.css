@@ -7,39 +7,51 @@
   /*Se pone este margen ya que el fixed-top del navbar nos quita espacio en este*/
   margin-top: 50px;
   margin-bottom: 0px;
-  /*Se debe ingresar los parametros*/ }
+  /*Se debe ingresar los parametros*/
+}
 
 .card-hotel {
   flex: 1 200px;
   margin-top: 10px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 .btnInf {
   background-color: rgba(95, 45, 85, 0.8);
-  width: 100%; }
+  width: 100%;
+}
 
 .breadcrumb {
   margin-top: 10px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+}
 
 .btnModal {
   margin-top: 0px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 footer {
-  background-color: rgba(95, 45, 85, 0.8); }
+  background-color: rgba(95, 45, 85, 0.8);
+}
 
 .footer-address-icon {
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 .icono {
-  color: black; }
+  color: black;
+}
 
 .im {
   display: block;
   margin: auto;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
 
 .tab-content {
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

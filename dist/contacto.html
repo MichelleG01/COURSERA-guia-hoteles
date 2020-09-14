@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Forma referencia desde un lugar publico, tipo CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  -->
+
+    <!-- Anteriorbuild:css dist/index.css-->
+    <link rel="stylesheet" href="css/index.c07a2e085a1235d91063.css">
+
+    <title>Guia Hoteles</title>
+  </head>
+  <body>
+
+  	<!--fixed-top le indica a la barra que se quede fija por mas que nos desplacemos -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#">Hoteles</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<!--El "target", especifica quién es el que va a activar esta acción, acá le ponemos el mismo "id" del contenido que va a tener nuestra barra de navegación -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  		<!--El id puede ser cualquier cosa-->
+  			<!--"collapse" y "navbar-collapse", nos va a indicar que es contenido colapsable, es decir, se va a ocultar para lo que es ya la forma responsive -->
+		    <ul class="navbar-nav mr-auto">
+		    	<!--Creamos una lista. mr-auto maneja los margenes -->
+				<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+				<li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Oficina central</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#">Contactanos</a> </li>
+		    </ul>
+		</div>
+	</nav>
+
+    <div class="jumbotron">
+		<h1>Hoteles</h1>
+	</div>
+	
+	<div class="container">
+		<nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+    			<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+    			<li class="breadcrumb-item active" aria-current="page">Contactanos</li>
+  			</ol>
+		</nav>
+
+		<h1>Deja tu comentario</h1>
+
+		<!--Creación del formulario -->
+		<form>			
+			<div class="form-row">
+			    <div class="form-group col-sm-6">
+			      <label for="nombre">Nombre</label>
+			      <!--En el for debe de ir el id del input para asociarlos -->
+			      <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+			    </div>
+			    <div class="form-group col-sm-6">
+			      <label for="apellido">Apellido</label>
+			      <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+			    </div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+					<input type="text" class="form-control" id="email" placeholder="Ingrese su email">
+			</div>
+			<div class="form-row">
+			    <div class="form-group col-sm-9">
+			      <label for="direccion">Dirección</label>
+			      <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+			    </div>
+			    <div class="form-group col-sm-3">
+			      <label for="departamento">Departamento</label>
+			      <select id="departamento" class="form-control">
+					<option selected>Amazonas</option>
+			      	<option>Antioquia</option>
+			      	<option>Arauca</option>
+			      	<option>Atlántico</option>
+			      	<option>Bolívar</option>
+			      	<option>Boyacá</option>
+			      	<option>Caldas</option>
+			      </select>
+			    </div>
+			</div>
+			<div class="form-group">
+				<label for="comentario">Comentario</label>
+				<textarea id="comentario" class="form-control" rows="10"></textarea>
+			</div>
+			<div class="form-group">
+			    <div class="form-check">
+			      <input class="form-check-input" type="checkbox" id="gridCheck">
+			      <label class="form-check-label" for="gridCheck">
+			        Quiero que me contacten
+			      </label>
+			    </div>
+			</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Enviar</button>
+			</div>
+
+		</form>
+
+	</div>
+
+
+
+	<footer class="page-footer font-small pt-4">
+
+		<div class="container">
+			<ul class="list-unstyled list-inline text-center">
+			  <li class="list-inline-item">
+			    <a class="btn-floating btn-fb mx-1" href="https://facebook.com/">
+			      <i class="fab fa-facebook-f icono"> </i>
+			    </a>
+			  </li>
+			  <li class="list-inline-item">
+			    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/">
+			      <i class="fab fa-twitter icono"> </i>
+			    </a>
+			  </li>
+
+			</ul>
+
+			<div class="row justify-content-between">
+					<div class="col-4">
+						<h3><span class="oi oi-thumb-up footer-address-icon"></span></span>Calificanos</h3>
+						<p>Recibimos sus sugerencias al correo soporte@todos.com.co</p>
+					</div>
+					<div class="col-4">
+						<h3><span class="oi oi-briefcase footer-address-icon"></span>Oficina central</h3>
+						<p><span class="oi oi-map-marker footer-address-icon"></span>Peru</p>
+						<p><span class="oi oi-phone footer-address-icon"></span>0180003333333</p>
+						<p><span class="oi oi-envelope-closed footer-address-icon"></span>hola@espero.esten.bien</p>
+					</div>
+				</div>
+
+		</div>
+		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+			<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+		</div>
+	</footer>
+
+    <!-- Anteriorbuild:js dist/index.js-->
+    <script src="js/main.029dfd498290002e0116.js"></script>
+
+  </body>
+</html>

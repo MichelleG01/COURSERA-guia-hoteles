@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Forma referencia desde un lugar publico, tipo CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  -->
+
+    <!--La segunda forma  para referenciar es haciendo uso de las librerias descargadas en nuestro pc -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Para que haga uso de los estilos propios se agrega como cualquier hoja de estilo-->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+
+    <!--Agrego estas librerias para solucionar error con la nvar -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <title>Guia Hoteles</title>
+  </head>
+  <body>
+
+  	<!--fixed-top le indica a la barra que se quede fija por mas que nos desplacemos -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#">Hoteles</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<!--El "target", especifica quién es el que va a activar esta acción, acá le ponemos el mismo "id" del contenido que va a tener nuestra barra de navegación -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  		<!--El id puede ser cualquier cosa-->
+  			<!--"collapse" y "navbar-collapse", nos va a indicar que es contenido colapsable, es decir, se va a ocultar para lo que es ya la forma responsive -->
+		    <ul class="navbar-nav mr-auto">
+		    	<!--Creamos una lista. mr-auto maneja los margenes -->
+				<li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+				<li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Oficina central</a></li>
+				<li class="nav-item"><a class="nav-link" href="./contacto.html">Contactanos</a> </li>
+		    </ul>
+		</div>
+	</nav>
+
+	<!--Utilizando Flex -->
+    <div class="jumbotron">
+		<h1>Hoteles</h1>
+	</div>
+	<div class="container">
+		<nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+    			<li class="breadcrumb-item active" aria-current="page">Home</li>
+  			</ol>
+		</nav>
+
+		<div class="row">
+		    <div class="col-sm">
+		    	<h2>Bienvenidos</h2>
+				<p>Esperemos que encuentres el hotel adecuado para ti. Solo recomendamos los hoteles</p>
+		    </div>
+		    <div class="col-sm">
+		      	<h2>Acerca</h2>
+				<p>Esta es una pequeña empresa que recopila información de los mejores hoteles en diferentes lugares.</p>
+		    </div>
+		    <div class="col-sm">
+		      	<h2>Terminos y condiciones</h2>
+				<p>La empresa no se hace responsable sobre las reservas de los hoteles recomendados.</p>
+		    </div>
+	  	</div>
+		
+		<div class="d-flex flex-wrap">
+			<!-- flex-wrap lo que hace es ajustar los elementos que vamos teniendo dentro del ancho del contenedor.-->
+		    <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+		    <!--Luego de card podemos pensarlo como que está compuesto por tres partes, lo que sería un header encabezado, después el cuerpo o el body y el footer si queremos poner en la parte de abajo de la tarjeta. -->
+		    	<div class="card-header">
+		    		<span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+		    	</div>
+		    	<div class="card-body">
+		    		<h5 class="card-title">Hotel Santa Barbara</h5>
+		    		<h6 class="card-subtitle text-muted">Antioquia</h6>
+		    		<img class="card-img-top" src="imagenes/1.jpg" alt="hotel img">
+					<p class="card-text">Ubicado cerca de la ciudad de Medellín</p></div>
+		    		<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p>
+		    	</div>
+		    </div>
+		    <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+		    	<div class="card-header">
+		    		<span class="oi oi-star"></span>
+		    	</div>
+		    	<div class="card-body">
+		    		<h5 class="card-title">Hotel la Pintada</h5>
+		    		<h6 class="card-subtitle text-muted">Antioquia</h6>
+		    		<img class="card-img-top" src="imagenes/2.jpg" alt="hotel img">
+					<p class="card-text">Cerca la via Medellín - Cali</p></div>
+		    		<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p>
+		    	</div>
+		    </div>
+		    <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+		    	<div class="card-header">
+		    		<span class="oi oi-star"></span><span class="oi oi-star"></span>
+		    	</div>
+		    	<div class="card-body">
+		    		<h5 class="card-title">Hotel Buena Aventura</h5>
+		    		<h6 class="card-subtitle text-muted">Antioquia</h6>
+		    		<img class="card-img-top" src="imagenes/3.jpg" alt="hotel img">
+					<p class="card-text">Cuenta con la mejor gastronomia</p></div>
+		    		<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p>
+		    	</div>
+		    </div>
+		    <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+		    	<div class="card-header">
+		    		<span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+		    	</div>
+		    	<div class="card-body">
+		    		<h5 class="card-title">Hotel Barcelona</h5>
+		    		<h6 class="card-subtitle text-muted">Antioquia</h6>
+		    		<img class="card-img-top" src="imagenes/4.jpg" alt="hotel img">
+					<p class="card-text">Te sorprendera su arquitectura</p></div>
+		    		<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p>
+		    	</div>
+		    </div>
+		    <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+		    	<div class="card-header">
+		    		<span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+		    	</div>
+		    	<div class="card-body">
+		    		<h5 class="card-title">Hotel San Pedro</h5>
+		    		<h6 class="card-subtitle text-muted">Antioquia</h6>
+		    		<img class="card-img-top" src="imagenes/5.jpg" alt="hotel img">
+					<p class="card-text">Encontraras las mejores fiestas</p></div>
+		    		<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p>
+		    	</div>
+		    </div>
+		   	<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+		    	<div class="card-header">
+		    		<span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+		    	</div>
+		    	<div class="card-body">
+		    		<h5 class="card-title">Hotel Rio de Janeiro</h5>
+		    		<h6 class="card-subtitle text-muted">Antioquia</h6>
+		    		<img class="card-img-top" src="imagenes/6.jpg" alt="hotel img">
+					<p class="card-text">Descubre la diversidad en los avarios</p></div>
+		    		<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p>
+		    	</div>
+		    </div>
+		   	<div class="card card-hotel d-flex flex-column justify-content-between ml-2">
+		    	<div class="card-header">
+		    		<span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span>
+		    	</div>
+		    	<div class="card-body">
+		    		<h5 class="card-title">Hotel La estrella</h5>
+		    		<h6 class="card-subtitle text-muted">Antioquia</h6>
+		    		<img class="card-img-top" src="imagenes/7.jpg" alt="hotel img">
+					<p class="card-text">Conectate con la naturaleza</p></div>
+		    		<div><p><a class="btn btn-primary btn-lg" role="button">Reservar</a></p>
+		    	</div>
+		    </div>
+	  	</div>
+
+	</div>
+
+	<footer class="page-footer font-small pt-4">
+
+		<div class="container">
+			<ul class="list-unstyled list-inline text-center">
+			  <li class="list-inline-item">
+			    <a class="btn-floating btn-fb mx-1" href="https://facebook.com/">
+			      <i class="fab fa-facebook-f icono"> </i>
+			    </a>
+			  </li>
+			  <li class="list-inline-item">
+			    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/">
+			      <i class="fab fa-twitter icono"> </i>
+			    </a>
+			  </li>
+
+			</ul>
+
+			<div class="row justify-content-between">
+					<div class="col-4">
+						<h3><span class="oi oi-thumb-up footer-address-icon"></span></span>Calificanos</h3>
+						<p>Recibimos sus sugerencias al correo soporte@todos.com.co</p>
+					</div>
+					<div class="col-4">
+						<h3><span class="oi oi-briefcase footer-address-icon"></span>Oficina central</h3>
+						<p><span class="oi oi-map-marker footer-address-icon"></span>Peru</p>
+						<p><span class="oi oi-phone footer-address-icon"></span>0180003333333</p>
+						<p><span class="oi oi-envelope-closed footer-address-icon"></span>hola@espero.esten.bien</p>
+					</div>
+				</div>
+
+		</div>
+		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+			<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+		</div>
+	</footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- Como ocurre con el CSS tambien se puede cambiar la referencia del jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+  </body>
+</html>

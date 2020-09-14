@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Forma referencia desde un lugar publico, tipo CDN -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  -->
+
+    <!-- Anteriorbuild:css dist/index.css-->
+    <link rel="stylesheet" href="css/index.c07a2e085a1235d91063.css">
+
+    <title>Guia Hoteles</title>
+  </head>
+  <body>
+
+  	<!--fixed-top le indica a la barra que se quede fija por mas que nos desplacemos -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="#">Hoteles</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<!--El "target", especifica quién es el que va a activar esta acción, acá le ponemos el mismo "id" del contenido que va a tener nuestra barra de navegación -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+	  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  		<!--El id puede ser cualquier cosa-->
+  			<!--"collapse" y "navbar-collapse", nos va a indicar que es contenido colapsable, es decir, se va a ocultar para lo que es ya la forma responsive -->
+		    <ul class="navbar-nav mr-auto">
+		    	<!--Creamos una lista. mr-auto maneja los margenes -->
+				<li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+				<li class="nav-item active"><a class="nav-link" href="#">Precios</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Oficina central</a></li>
+				<li class="nav-item"><a class="nav-link" href="./contacto.html">Contactanos</a> </li>
+		    </ul>
+		</div>
+	</nav>
+
+    <div class="jumbotron">
+		<h1>Hoteles</h1>
+	</div>
+	
+	<div class="container">
+		<nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+    			<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+    			<li class="breadcrumb-item active" aria-current="page">Precios</li>
+  			</ol>
+		</nav>
+
+		<!--Agregamos los navs-->
+		<!--Primero se definen lo que serían las solapas, las pestañas, los tabs -->
+		<!--Se puede cambiar el diseño a botones utilizando pill. En la parte de  class="nav nav-tabs" se cambia por class="nav nav-pills y en data-toggle="tab" por data-toggle="pill""-->
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+		    	<a class="nav-link active" id="precios-tab" data-toggle="tab" href="#precios" role="tab" aria-controls="precios" aria-selected="true">Active</a>
+		    	<!--El href se tiene que vincular con el id del panel que vamos a mostrar -->
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="nav-link" id="recomendacion-tab" data-toggle="tab" href="#recomendacion" role="tab" aria-controls="recomendacion" aria-selected="false">Recomendacion</a>
+		  	</li>
+		  	<li class="nav-item">
+		    	<a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+		  	</li>
+		</ul>
+
+		<!--Despues se definen los contenedores o los paneles que van a mostrar el contenido asociado a cada una de las pestañas. -->
+		<div class="tab-content" id="myTabContent">
+			<!--El sgt div se hace para cada contenedor -->
+			<div class="tab-pane fade show active" id="precios" role="tabpanel" aria-labelledby="precios-tab">
+				
+				<!-- Creaciónde tabla -->
+				<div class="table-responsive">
+				<!-- Al poner el responsive la tabla se conserva en un cuadro -->
+					<table class="table table-striped">
+						<thead class="thead-dark">
+							<th>Calidad</th>
+							<th>Pinamar</th>
+							<th>Mar del plata</th>
+							<th>San Clemente</th>
+							<th>Santa Teresita</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="oi oi-star"></span></td>
+								<td>$100</td>
+								<td>$110</td>
+								<td>$120</td>
+								<td>$130</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>$200</td>
+								<td>$210</td>
+								<td>$220</td>
+								<td>$230</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>3100</td>
+								<td>3110</td>
+								<td>3120</td>
+								<td>3130</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>4100</td>
+								<td>4110</td>
+								<td>4120</td>
+								<td>4130</td>
+							</tr>
+							<tr>
+								<td><span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span>
+									<span class="oi oi-star"></span></td>
+								<td>5100</td>
+								<td>5110</td>
+								<td>5120</td>
+								<td>5130</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="tab-pane fade" id="recomendacion" role="tabpanel" aria-labelledby="recomendacion-tab">Recomendacion
+
+			</div>
+
+			<div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+				<div id="accordion">
+					<div class="card">
+					    <div class="card-header" id="headingOne">
+					      	<h5 class="mb-0">
+					        	<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					         	Tarjetas de crédito
+					        	</button>
+					      	</h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+					      	<div class="card-body">
+					        	Son tarjetas con un crédito asociado y las compras o retiradas de efectivo se hacen con cargo a ese crédito.
+					        	Puedes elegir diversas formas de devolver el importe dispuesto, como el pago semanal, a fin de mes, o un fraccionamiento del mismo (cuota fija mensual o porcentaje del total gastado) y en función de esa modalidad de pago se pueden o no pagar intereses.  Para cada tarjeta se establece un límite de crédito. Dicho crédito es permanente (mientras tengas operativa la tarjeta) y, conforme vayas pagando la deuda, puedes volver a disponer hasta el límite establecido.
+					      	</div>
+					    </div>
+					</div>
+					<div class="card">
+					    <div class="card-header" id="headingTwo">
+					      	<h5 class="mb-0">
+					        	<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          	Tarjetas de débito
+					        	</button>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					      	<div class="card-body">
+					        Con una tarjeta de débito podrás operar a través de cajeros automáticos (sacar dinero, pedir extractos y movimientos de la cuenta, etc.), y pagar en comercios. Con este tipo de tarjeta, todos los cargos de las operaciones que hagas se descuentan inmediatamente del saldo de tu cuenta; en caso de no existir saldo suficiente, la operación no se puede realizar.
+					      	</div>
+					    </div>
+					</div>
+					<div class="card">
+					    <div class="card-header" id="headingThree">
+					      	<h5 class="mb-0">
+					        	<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					         	Tarjetas prepago
+					        	</button>
+					      	</h5>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					      	<div class="card-body">
+					        La tarjeta prepago es la que tiene su uso limitado a un importe que previamente se ha cargado en la misma. Así, primero debes efectuar la carga de dinero y después podrás usarla para realizar las operaciones que se quiera como una tarjeta de débito: compras y retiradas de efectivo.
+					      	</div>
+					    </div>
+					  </div>					  
+				</div><!--Finaliza el acording -->
+
+			</div>
+
+		</div><!--Cierre del tab-content -->
+
+
+	</div>
+
+	<footer class="page-footer font-small pt-4">
+
+		<div class="container">
+			<ul class="list-unstyled list-inline text-center">
+			  <li class="list-inline-item">
+			    <a class="btn-floating btn-fb mx-1" href="https://facebook.com/">
+			      <i class="fab fa-facebook-f icono"> </i>
+			    </a>
+			  </li>
+			  <li class="list-inline-item">
+			    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/">
+			      <i class="fab fa-twitter icono"> </i>
+			    </a>
+			  </li>
+
+			</ul>
+
+			<div class="row justify-content-between">
+					<div class="col-4">
+						<h3><span class="oi oi-thumb-up footer-address-icon"></span></span>Calificanos</h3>
+						<p>Recibimos sus sugerencias al correo soporte@todos.com.co</p>
+					</div>
+					<div class="col-4">
+						<h3><span class="oi oi-briefcase footer-address-icon"></span>Oficina central</h3>
+						<p><span class="oi oi-map-marker footer-address-icon"></span>Peru</p>
+						<p><span class="oi oi-phone footer-address-icon"></span>0180003333333</p>
+						<p><span class="oi oi-envelope-closed footer-address-icon"></span>hola@espero.esten.bien</p>
+					</div>
+				</div>
+
+		</div>
+		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+			<a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+		</div>
+	</footer>
+
+    <!-- Anteriorbuild:js dist/index.js-->
+    <script src="js/main.029dfd498290002e0116.js"></script>
+  </body>
+</html>
